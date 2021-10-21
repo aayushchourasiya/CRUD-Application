@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Users!</title>
+        <link rel="stylesheet" href="/CRUD Application/css/homepage.css">
+        <link rel="stylesheet" href="/CRUD Application/css/addusers.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class = "topNav">
+            <a href = "homepage.html" id="users">All Users</a>
+            <a class = "active" href = "addusers.html" id="addusers">Add Users</a>
+            <a href = "about.html" id="about">About</a>
+        </div>
+        <div id = "bodyDiv">
+            <form onsubmit = "return saveData()">
+                <h2 style="text-align: center;">Enter Your Details!</h2>
+                <table>
+                    <tr>
+                        <td>First name:</td>
+                        <td><input type = "text" id="fname" placeholder="Enter Your First Name!" required></td>
+                    </tr>
+                    <tr>
+                        <td>Last name:</td>
+                        <td><input type = "text" id="lname" placeholder="Enter Your Last Name!" required></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type = "email" id="email" placeholder="Enter Your Email!" required></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><input type = "password" id="password" placeholder="Enter Your Password!" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;"><input type = "submit" value="Submit"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div id = "bottomDiv">
+            <p id="footer">CRUD</p>
+        </div>
+        <script src = "/CRUD Application/js/addusers.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>

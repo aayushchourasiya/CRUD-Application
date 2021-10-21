@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Edit Details!</title>  
+    </head>
+    <body>
+        <div style="display: flex; justify-content: center;">
+            <form onsubmit = "return editData()">
+                <p style="text-align: center;">Edit Details:</p>
+                <p style="text-align: center; font-size: small; color: red;">You can't edit email! <br> Please fill all details!</p>
+                <table>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type = "text" id="emailEdit" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>First name:</td>
+                        <td><input type = "text" id="fnameEdit" placeholder="Enter Your First Name!" required></td>
+                    </tr>
+                    <tr>
+                        <td>Last name:</td>
+                        <td><input type = "text" id="lnameEdit" placeholder="Enter Your Last Name!" required></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><input type = "password" id="passwordEdit" placeholder="Enter Your Password!" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;"><input type = "submit" value="Submit"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <script src = "/CRUD Application/js/editDetails.js"></script>
+    </body>
+</html>
